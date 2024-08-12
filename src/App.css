@@ -1,5 +1,24 @@
 .App {
   text-align: center;
+  background: rgb(0, 126, 98);
+  background: radial-gradient(
+    circle,
+    rgba(0, 126, 98, 1) 0%,
+    rgba(14, 91, 177, 1) 100%
+  );
+  min-height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carta {
+  background: rgb(104, 207, 208);
+  background: radial-gradient(
+    circle,
+    rgba(104, 207, 208, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .App-logo {
@@ -35,4 +54,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+.cards-container,
+.addTask-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminer {
+  color: red;
+  text-decoration: line-through;
+}
+
+.encours {
+  color: green;
+  font-style: italic;
 }
